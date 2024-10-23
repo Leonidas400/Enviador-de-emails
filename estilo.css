@@ -1,0 +1,65 @@
+body{
+    background: rgb(93, 93, 241);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: rgb(245, 238, 238);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(43, 42, 42, 0.658);
+}
+
+div{
+    padding: 8px;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.area-de-escrita{
+    display: block;
+    width: 440px;
+    height: 25px;
+    border-radius: 8px;
+    border: 3px;
+    background-color: rgb(200, 201, 206);
+    
+}
+.mensagem{
+    display: block;
+    width: 440px;
+    height: 100px;
+    border-radius: 8px;
+    border: 3px;
+    background-color: rgb(200, 201, 206);
+}
+
+.botao{
+    text-align: center;
+}
+.botao-oficial{
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: solid black;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviador de E-mail</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="scripitado.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "tUv-sOoEorhh0Ri5Y",// sua chave púclica encontrada no emailjs após criar uma conta
+            });
+        })();
+    </script>
+</head>
+<body">
+    <header>
+        <h1>Formulário muito legal</h1>
+    </header>
+    <section>
+        <div id="cabeca">
+            <h2>Sobre Mim</h2>
+            <p>Prencha o Formulário para me enviar um e-mail muito legal ...Talvez eu te responda... um dia quem sabe</p>
+        </div>
+        <div id="formulario">
+            <form>
+                <div class="formulario-grupo">
+                    <label for="name">Nome:</label>
+                    <input class="area-de-escrita" type="text" id="name" name="name" required>
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="email">E-mail:</label>
+                    <input class="area-de-escrita" type="email" id="email" name="email" required>
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="telefone">Celular:</label>
+                    <input class="area-de-escrita" type="tel" id="telefone" name="telefone" required>
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="assunto">Assunto:</label>
+                    <input class="area-de-escrita" type="text" id="assunto" name="assunto" required>
+                </div>
+
+                <div class="formulario-grupo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="mensagem" id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+
+                <div class="botao">
+                    <button class="botao-oficial" type="submit" onclick="enviarEmail()">Enviar</button>
+                </div>
+                
+            </form>
+
+            
+        </div>
+        <div id="msg2">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Anonimouz</p>
+    </footer>
+    
+</body>
+</html>
